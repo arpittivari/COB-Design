@@ -1,0 +1,19 @@
+# Ignore all files in all directories by default
+**/*
+
+# Un-ignore all directories so Git can traverse them
+!*/
+!**/*/
+
+# Explicitly ignore tex and zip files anywhere
+**/*.tex
+**/*.zip
+
+# Only allow these specific file types anywhere
+!**/*.pdf
+!**/*.v
+!**/*.sv
+!**/*.py
+
+# Allow Git to track this .gitignore file
+!.gitignore
