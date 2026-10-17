@@ -24,3 +24,8 @@ __pycache__/
 # OS files
 Thumbs.db
 .DS_Store
+
+# PDK foundry libraries & technology files (external dependencies)
+*.lib
+*.lef
+*.gds

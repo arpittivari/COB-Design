@@ -75,10 +75,12 @@ gtkwave 03_sim/waveforms/toysound_top_tb.vcd
 ```
 
 ### 2. Logic Synthesis
-Run synthesis using **Yosys** targeting the SCL 1.2 µm standard cell library:
+Run synthesis using **Yosys** targeting the **SCL 1.2 µm CMOS (C1D)** open-source standard cell library:
 ```bash
 yosys -c synth.tcl
 ```
+*Note: `synth.tcl` targets `c1d_core_typ.lib` (typical PVT corner: 5V, 27°C). Ensure your local SCL 1.2 µm Liberty file is placed in `04_syn/` or update the path in `synth.tcl`.*
+
 Outputs generated in `04_syn/`:
 - `04_syn/toysound_netlist.v` — Synthesized gate-level netlist
 - `04_syn/toysound_stats.txt` — Standard cell count and area report

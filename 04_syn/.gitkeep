@@ -1,0 +1,2 @@
+# 04_syn: Logic synthesis directory
+# Contains synthesis scripts, netlists (*.v), and area/cell reports (*_stats.txt)
