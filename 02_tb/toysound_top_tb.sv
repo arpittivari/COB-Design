@@ -67,7 +67,7 @@ module toysound_top_tb;
   // VCD waveform dump
   // -------------------------------------------------------------------------
   initial begin
-    $dumpfile("sim/waveforms/toysound_top_tb.vcd");
+    $dumpfile("03_sim/waveforms/toysound_top_tb.vcd");
     $dumpvars(0, toysound_top_tb);
   end
 

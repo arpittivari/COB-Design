@@ -1,19 +1,26 @@
-# Ignore all files in all directories by default
-**/*
+# Simulation compiled files and large waveform dumps
+*.vvp
+*.vcd
+*.vpd
+*.fsdb
 
-# Un-ignore all directories so Git can traverse them
-!*/
-!**/*/
+# Temporary logs and scratch files
+*.log
+_test*
+_yosys*
 
-# Explicitly ignore tex and zip files anywhere
-**/*.tex
-**/*.zip
+# LaTeX intermediate build files
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
 
-# Only allow these specific file types anywhere
-!**/*.pdf
-!**/*.v
-!**/*.sv
-!**/*.py
+# Python bytecode and caches
+__pycache__/
+*.pyc
 
-# Allow Git to track this .gitignore file
-!.gitignore
+# OS files
+Thumbs.db
+.DS_Store

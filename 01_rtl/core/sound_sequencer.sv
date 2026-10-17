@@ -47,7 +47,7 @@ module sound_sequencer (
   // -------------------------------------------------------------------------
 
   // Internal state
-  seq_state_t              state;
+  reg [1:0]                state;
   reg [$clog2(NOTES_PER_SOUND):0] note_idx; // current note index
   reg [DIV_WIDTH-1:0]      cur_div;         // latched divider for this note
   reg [DUR_WIDTH-1:0]      cur_dur;         // latched duration for this note

@@ -37,8 +37,8 @@ module sound_controller (
   output reg         busy         // high while sound is playing
 );
 
-  sc_state_t state;
-  reg [1:0]  song_index;
+  reg [2:0] state;
+  reg [1:0] song_index;
 
   always_ff @(posedge clk or negedge reset_n) begin
     if (!reset_n) begin

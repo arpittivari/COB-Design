@@ -29,22 +29,17 @@ package toysound_pkg;
   // ---------------------------------------------------------------------------
   // Sound controller FSM states
   // ---------------------------------------------------------------------------
-  typedef enum logic [2:0] {
-    SC_IDLE       = 3'b000,
-    SC_LOAD_SOUND = 3'b001,
-    SC_PLAYING    = 3'b010,
-    SC_DONE       = 3'b011
-  } sc_state_t;
+  // SC (Sound Controller) FSM state encodings
+  localparam SC_IDLE       = 3'b000;
+  localparam SC_LOAD_SOUND = 3'b001;
+  localparam SC_PLAYING    = 3'b010;
+  localparam SC_DONE       = 3'b011;
 
-  // ---------------------------------------------------------------------------
-  // Sequencer FSM states
-  // ---------------------------------------------------------------------------
-  typedef enum logic [1:0] {
-    SEQ_IDLE     = 2'b00,
-    SEQ_PLAY     = 2'b01,
-    SEQ_WAIT_DUR = 2'b10,
-    SEQ_DONE     = 2'b11
-  } seq_state_t;
+  // SEQ (Sequencer) FSM state encodings
+  localparam SEQ_IDLE     = 2'b00;
+  localparam SEQ_PLAY     = 2'b01;
+  localparam SEQ_WAIT_DUR = 2'b10;
+  localparam SEQ_DONE     = 2'b11;
 
   // ---------------------------------------------------------------------------
   // Tone divider width and duration width

@@ -1,0 +1,2 @@
+# 03_sim: Functional simulation directory
+# Contains compiled simulation models (*.vvp) and waveform dumps (*.vcd)
