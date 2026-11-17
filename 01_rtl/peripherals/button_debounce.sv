@@ -1,25 +1,3 @@
-// =============================================================================
-// button_debounce.sv
-// TOYSOUND-01 — Button debounce module
-//
-// Process : SCL 1.2 µm CMOS (C1D)
-// Revision: A
-// Date    : 2026-10-02
-//
-// Description:
-//   Converts an unstable mechanical button signal (active-low) into a single
-//   clean pulse (btn_event, active-high, single clock cycle wide).
-//
-//   Method: counter-based.
-//   - While the raw input is stable and low (pressed), increment counter.
-//   - When counter reaches DEBOUNCE_CYCLES the button is considered pressed.
-//   - btn_event fires for exactly one cycle on that transition.
-//   - Counter resets whenever the raw input goes high (released/bouncing).
-//   - Once pressed, no further event is generated until the button is released
-//     and the counter cycles again.
-// =============================================================================
-
-`default_nettype none
 
 module button_debounce #(
   parameter int DEBOUNCE_CYCLES = 1000  // stable cycles needed (1 ms at 1 MHz)

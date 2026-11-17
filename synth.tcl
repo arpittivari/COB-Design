@@ -1,15 +1,4 @@
-# synth.tcl — Yosys synthesis for TOYSOUND-01
-# Target: SCL 1.2 µm CMOS (C1D) PDK
-#
-# Run from project root (after activating OSS CAD Suite):
-#   yosys -c synth.tcl
-#
-# Outputs:
-#   04_syn/toysound_netlist.v   — gate-level netlist mapped to SCL cells
-#   04_syn/toysound_stats.txt   — cell count & area estimate
 
-# ── PDK Liberty file ─────────────────────────────────────────────────────────
-# Typical corner: nominal temperature & voltage
 set PDK_LIB "04_syn/c1d_core_typ.lib"
 
 # ── RTL source files ──────────────────────────────────────────────────────────

@@ -1,11 +1,4 @@
-// =============================================================================
-// toysound_pkg.sv
-// TOYSOUND-01 — Package: types, constants, tone table
-//
-// Process : SCL 1.2 µm CMOS (C1D)
-// Revision: A
-// Date    : 2026-10-02
-// =============================================================================
+
 
 package toysound_pkg;
 
